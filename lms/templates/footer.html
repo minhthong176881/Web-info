@@ -170,3 +170,14 @@
     <link rel="stylesheet" type="text/css" href="${url}"></link>
   % endfor
 % endif
+
+<script>
+  window.onload = function() {
+    var input = document.createElement('input');
+    input.setAttribute("type", "search");
+    input.setAttribute("class", "search-header");
+    input.setAttribute("placeholder", "Search anything...")
+    var secondary = document.querySelector('.secondary');
+    secondary.insertAdjacentElement('afterbegin', input);
+  }
+</script>
