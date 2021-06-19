@@ -1,0 +1,10 @@
+// Theming overrides for sample theme
+$header-bg: rgb(140, 21, 21);
+$footer-bg: rgb(140, 21, 21);
+$container-bg: rgb(241, 241, 241);
+$content-wrapper-bg: rgb(241, 241, 241);
+$serif: 'Helvetica';
+$font-family-sans-serif: 'Helvetica';
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
