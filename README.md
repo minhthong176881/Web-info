@@ -6,7 +6,7 @@ Installation:
   - Switch to the Open edX theme directory: _cd /edx/app/edxapp/edx-platform/themes_
   - Create custom theme: _mkdir my-theme_
   - Navigate to my-theme: _cd my-theme_
-  - Pull theme from github repo: git init -> git remote add origin https://github.com/minhthong176881/Web-info -> git pull origin master
+  - Pull theme from github repo: git init -> git remote add origin https://github.com/minhthong176881/Web-info.git -> git pull origin master
   - Open other terminal with normal user and set permission for my-theme: _sudo chmod -R 777 /edx/app/edxapp/edx-platform/themes/my-theme_
   - Config lms.yml: _nano /edx/etc/lms.yml_
     - Set "ENABLE_COMPREHENSIVE_THEMING": true
