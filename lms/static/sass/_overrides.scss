@@ -12,16 +12,46 @@ $blue: #1da4dd;
     }
 }
 
+.content-wrapper {
+    padding: 0;
+}
+
 .home > header {
     background-color: #1da4dd;
+    margin-top: -20px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.4)), url('/static/my-theme/images/background-b1.jpg');
+    background-position: center;
+    height: 500px;
+}
+
+.home > header .outer-wrapper {
+    margin-top: 50px;
+}
+
+.courses-container .courses {
+    margin-top: 30px; 
 }
 
 .courses-container .courses .course {
     border-bottom-color: #1da4dd;
+    border-radius: 15px;
 }
+
+.courses-container .courses .courses-listing .courses-listing-item {
+    width: 18%
+} 
 
 .courses-container .courses .course .course-image .cover-image .learn-more {
     background-color: #1da4dd;
+}
+
+.courses-container .courses .course .cover-image {
+    border-radius: 15px 15px 0 0;
+}
+
+.courses-container .courses .course .cover-image::before{
+    border-radius: 15px 15px 0 0;
+    content: '';
 }
 
 .highlighted-courses .course .course,
@@ -29,19 +59,56 @@ $blue: #1da4dd;
     border-color: #a9bbd3;
 }
 
-.search-header {
-    height: 25px;
-    width: 250px;
-    border-radius: 5px;
-    border: 0.1px solid #c2c2c2;
-    padding: 5px 10px;
-    outline: none;
+.explore-courses {
+    background-color: #f2f0ef;
+    padding: 50px;
 }
 
-.search-header:focus {
-    border-color: #1da4dd;
+.explore-courses > h1 {
+    font-size: 60px; 
+    font-weight: 600;
 }
 
-.search-header:hover {
-    border: 0.1px solid #1da4dd;
+.explore-courses .course-tags {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.explore-courses .course-tags .course-tag {
+    padding: 20px; 
+    text-decoration: none; 
+    color: #00262b; 
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+
+.explore-courses .course-tags .course-tag:hover {
+    color: white;
+    background-color: #1da4dd;
+}
+
+.hust-ict {
+    background-color: white; 
+    height: 210px;
+}
+
+.hust-ict > p {
+    text-align: center; 
+    font-size: 20px; 
+    font-weight: 600;
+}
+
+.home-image-logo {
+    width: 150px; 
+    margin: 10px;
+}
+
+.description {
+    height: 700px; 
+    background-color: #00262b;
+    padding: 75px 250px 0;
+    background-image: url('/static/my-theme/images/globe-dark.png'); 
+    background-position: bottom; 
+    background-position-x: 975px;
+    background-repeat: no-repeat; 
 }
