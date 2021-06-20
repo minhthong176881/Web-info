@@ -12,6 +12,9 @@ Installation:
     - Set "ENABLE_COMPREHENSIVE_THEMING": true
     - Set "COMPREHENSIVE_THEME_DIRS": /edx/app/edxapp/edx-platform/themes
     - Set "DEFAULT_SITE_THEME": my-theme
+  - Install debug-toolbar: 
+    - _pip install django-debug-toolbar_
+    - _pip install factory_boy_
   - Update assets: _cd /edx/app/edxapp/edx-platform/_ -> _paver update_assets_
   - Restart edx instance: 
     - /edx/bin/supervisorctl restart lms
@@ -27,4 +30,5 @@ Installation:
 Usage:
   - Modify theme with the _my-theme/lms/static/sass/\_overrides.scss_
   - Apply changes: navigate to _/edx/app/edxapp/edx-platform/_ and run _paver update_assets --themes my-theme_
+  - To add more course: go to _192.168.56.10:18010_
   
