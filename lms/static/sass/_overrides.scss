@@ -1,7 +1,8 @@
 $sans-serif: 'Helvetica';
 $header-bg: #0a0a0a;
 $blue: #1da4dd;
-
+$background:#2a6e8a;
+$color-footer:#dffbff;
 .header-global {
     height: 90px;
     border-bottom: none;
@@ -45,9 +46,51 @@ $blue: #1da4dd;
 .search-header:hover {
     border: 0.1px solid #1da4dd;
 }
+.wrapper-footer{
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width:  -webkit-fill-available;
+    padding: 10px 20px 10px 20px;
+
+}
 .colophon{
     display: flex !important;
     justify-content: space-between;
-
+align-items: baseline;
     width: -webkit-fill-available!important;
+    padding:0 20px 20 20px;
+  
+    
+}
+.tittle-footer{
+font-size: 18px;
+color:#464444!important
+}
+.subtitle-footer{
+    color:$blue;
+    font-size: 15px;
+}
+.text-footer{
+    color:#fafefd
+}
+
+button[type='button'].btn-subscribe{
+    background-color: $background;
+    border:2px solid $blue;
+    height: 35px;
+ color:#d8f4f6;
+ background-image: unset;
+ border-radius: unset;
+}
+.input-news-letter{
+    height: 32px;
+    border: 1px solid $blue;
+   
+    padding-left: 10px;
+    background-color: #fffeff;
+}
+.wrapper-footer footer#footer-openedx .colophon .nav-colophon{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
