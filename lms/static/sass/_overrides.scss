@@ -45,3 +45,9 @@ $blue: #1da4dd;
 .search-header:hover {
     border: 0.1px solid #1da4dd;
 }
+.colophon{
+    display: flex !important;
+    justify-content: space-between;
+
+    width: -webkit-fill-available!important;
+}
