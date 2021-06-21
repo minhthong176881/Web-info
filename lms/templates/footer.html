@@ -35,7 +35,7 @@
                 ## can be included in the footer on other sites
                 ## (e.g. a blog or marketing front-end) to provide a consistent
                 ## user experience.  See the branding app for details.
-                <img style="width: 60px" alt="${_('organization logo')}" src="/static/my-theme/images/logo.png">
+                <img alt="${_('organization logo')}" src="/static/my-theme/images/logo.png">
               </a>
             </p>
           </div>
@@ -166,7 +166,7 @@
               ## can be included in the footer on other sites
               ## (e.g. a blog or marketing front-end) to provide a consistent
               ## user experience.  See the branding app for details.
-              <img style="width: 60px" alt="${_('organization logo')}" src="/static/my-theme/images/logo.png">
+              <img alt="${_('organization logo')}" src="/static/my-theme/images/logo.png">
             </a>
           </p>
         </div> -->
@@ -221,3 +221,23 @@
     <link rel="stylesheet" type="text/css" href="${url}"></link>
   % endfor
 % endif
+
+<script>
+  function getImagesByAlt(alt) {
+    var images = document.getElementsByTagName("img");
+    for (var i = 0, len = images.length; i < len; ++i) {
+        if (images[i].alt == alt) {
+            return images[i];
+        }
+    }
+    return null;
+}
+  window.onload = function () {  
+    var url = window.location.href;
+    var image;
+    if (url.includes('courses/course-')) {
+      image = getImagesByAlt('organization logo');
+      image.style.width = '65px';
+    }
+  }
+</script>

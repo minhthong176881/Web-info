@@ -1,4 +1,4 @@
-$sans-serif: 'Helvetica';
+$sans-serif: "Helvetica";
 $header-bg: #0a0a0a;
 $blue: #1da4dd;
 $background:#2a6e8a;
@@ -13,16 +13,56 @@ $color-footer:#dffbff;
     }
 }
 
-.home > header {
+.content-wrapper {
+    padding: 0;
+}
+
+.home > header, #main > header {
     background-color: #1da4dd;
+    margin-top: -20px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.4)),
+        url("/static/my-theme/images/background-b1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.blog-header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.4)), url("/static/my-theme/images/taquangbuu.jpg");
+    height: 50vh;
+}
+
+.home > header .outer-wrapper {
+    margin-top: 50px;
+}
+
+.courses-container .courses {
+    margin-top: 30px;
 }
 
 .courses-container .courses .course {
     border-bottom-color: #1da4dd;
+    border-radius: 15px;
+}
+
+.courses-container .courses .courses-listing .courses-listing-item {
+    width: 18%;
 }
 
 .courses-container .courses .course .course-image .cover-image .learn-more {
     background-color: #1da4dd;
+}
+
+.courses-container .courses .course .cover-image {
+    border-radius: 15px 15px 0 0;
+}
+
+.courses-container .courses .course .cover-image::before {
+    border-radius: 15px 15px 0 0;
+    content: "";
 }
 
 .highlighted-courses .course .course,
@@ -30,18 +70,39 @@ $color-footer:#dffbff;
     border-color: #a9bbd3;
 }
 
-.search-header {
-    height: 25px;
-    width: 250px;
-    border-radius: 5px;
-    border: 0.1px solid #c2c2c2;
-    padding: 5px 10px;
-    outline: none;
+.explore-courses {
+    background-color: #f2f0ef;
+    padding: 50px;
 }
 
-.search-header:focus {
-    border-color: #1da4dd;
+.explore-courses > h1 {
+    font-size: 60px;
+    font-weight: 600;
 }
+
+.explore-courses .course-tags {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.explore-courses .course-tags .course-tag {
+    padding: 20px;
+    text-decoration: none;
+    color: #00262b;
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+
+.explore-courses .course-tags .course-tag:hover {
+    color: white;
+    background-color: #1da4dd;
+}
+
+.hust-ict {
+    background-color: white;
+    height: 300px;
+}
+
 
 .search-header:hover {
     border: 0.1px solid #1da4dd;
@@ -94,3 +155,157 @@ button[type='button'].btn-subscribe{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.hust-ict > p {
+    text-align: center;
+    font-size: 20px;
+    // font-weight: 600;
+}
+
+.hust-ict > h1 {
+    text-align: center;
+    font-size: 30px;
+    // font-weight: 600;
+}
+
+.home-image-logo {
+    width: 150px;
+    margin: 10px;
+}
+
+.description {
+    height: 700px;
+    background-color: #00262b;
+    padding: 75px 250px 0;
+    background-image: url("/static/my-theme/images/globe-dark.png");
+    background-position: bottom;
+    background-position-x: 975px;
+    background-repeat: no-repeat;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 56px;
+    color: white;
+    font-weight: 600;
+}
+
+.text-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.text-box p {
+    margin: 10px 0px 40px;
+    color: white;
+    margin: 20px 0px; 
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero-btn {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.hero-btn:hover {
+    border: 1px solid #1da4dd;
+    background: #1da4dd;
+    transition: 1s;
+    color: white;
+    text-decoration: none;
+}
+
+.search-courses {
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+ }
+ :-moz-placeholder {
+    font-style: italic;  
+ }
+ ::-moz-placeholder {
+    font-style: italic;  
+ }
+ :-ms-input-placeholder {  
+    font-style: italic; 
+ }
+
+ .blog-content {
+    display: flex; padding: 0 20%; margin-top: 2.5%
+ }
+
+ .blog-content .blog-left {
+    width: 65%; padding: 2.5%;
+ }
+
+ .blog-content .blog-left .featured-blog h2 {
+    color: black; font-weight: 600; font-size: 30px; line-height: 40px;
+ }
+
+ .blog-content .blog-right {
+    width: 35%; padding: 2.5%;
+ }
+
+ .popular-resources .popular-resource {
+    display: flex; margin-top: 20px;
+ }
+
+ .popular-resources .popular-resource img {
+    width: 80px; margin-right: 20px
+ }
+
+ .popular-resources .popular-resource p {
+     line-height: 23px;
+ }
+
+ .posts h2 {
+    color: black; font-weight: 600; font-size: 30px; line-height: 40px;
+ }
+
+ .posts .post {
+    display: flex; justify-content: space-between;
+    margin-bottom: 20px;
+ }
+
+ .posts .post .left-post, .posts .post .right-post {
+    border: 0.1px solid #c2c2c2; width: 45%;
+ }
+
+ .left-post img {
+    height: 200px; width: 100%; overflow: hidden;
+ }
+
+ .left-post p {
+    font-size: 18px; line-height: 28px;
+ }
+
+ .right-post img {
+    height: 200px; width: 100%; overflow: hidden;
+ }
+
+ .right-post p {
+    font-size: 18px; line-height: 28px;
+ }
+
