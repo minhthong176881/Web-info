@@ -15,6 +15,7 @@ $color-footer:#dffbff;
 
 .content-wrapper {
     padding: 0;
+    margin:unset
 }
 
 .home > header, #main > header {
@@ -64,7 +65,13 @@ $color-footer:#dffbff;
     border-radius: 15px 15px 0 0;
     content: "";
 }
+.find-courses{
+    padding-bottom: unset!important;
+}
+.courses-container{
+    padding: 30px!important;
 
+}
 .highlighted-courses .course .course,
 .find-courses .courses .course {
     border-color: #a9bbd3;
@@ -112,7 +119,7 @@ $color-footer:#dffbff;
     position: unset;
     bottom: 0px;
     width:  -webkit-fill-available;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 30px;
 
 }
 .colophon{
@@ -138,19 +145,23 @@ color:#464444!important
 
 button[type='button'].btn-subscribe{
     background-color: $background;
-    border:2px solid $blue;
+   
     height: 35px;
  color:#d8f4f6;
  background-image: unset;
  border-radius: unset;
 }
 .input-news-letter{
-    height: 32px;
+    height: 31px;
     border: 1px solid $blue;
    
     padding-left: 10px;
     background-color: #fffeff;
 }
+.wrapper-footer footer#footer-openedx .colophon{
+    margin-right: unset!important;
+}
+
 .wrapper-footer footer#footer-openedx .colophon .nav-colophon{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -158,12 +169,15 @@ button[type='button'].btn-subscribe{
 .user-image-frame{
     border-radius: 50%;
 }
-// .global-header .nav-links .main .nav-tab a.active, .global-header .nav-links .main .nav-tab a:hover{
-//     color:#214699;
-// }
-// .global-header .nav-links .main .nav-tab a{
-//     color:white
-// }
+.global-header .nav-links .main .nav-tab a.active, .global-header .nav-links .main .nav-tab a:hover{
+    color:#214699;
+}
+.global-header .nav-links .main .nav-tab a{
+    color:white
+}
+.username, .secondary .help-link{
+    color: white !important;;
+}
 
 .hust-ict > p {
     text-align: center;
@@ -318,3 +332,70 @@ button[type='button'].btn-subscribe{
     font-size: 18px; line-height: 28px;
  }
 
+header.global-header{
+    background-image: linear-gradient(to right,#bbe4f5,#1da4dd ,#1783b1 );
+    color:white;
+    margin-bottom: 20px;
+    border: unset !important;
+}
+img.user-image-frame{
+    border-radius: 50%!important;
+}
+.nav-item.hidden-mobile{
+   margin-right: unset!important; 
+}
+.dashboard .main-container{
+    padding-top: 20px;
+}
+.dashboard .side-container{
+    padding-bottom:40px;
+}
+@media (min-width: 992px){
+.global-header .nav-links .secondary .dropdown-user-menu{
+    top:67px;
+}
+}
+.content-wrapper{
+    margin-top: unset!important;
+}
+.courses.no-course-discovery{
+    width: -webkit-fill-available!important;
+    padding: 30px !important;
+}
+a.register-btn.btn{
+    color:black
+}
+.description-about{
+    font-size: 1.2rem;
+     color:#626667;
+     line-height: 30px;
+}
+#about-menu{
+    margin-bottom: 20px!important;
+}
+.number-about{
+    font-size: 35px;
+    font-weight: bold;
+}
+.sub-description-about{
+    color:#1a263a;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.international{
+    font-size:35px ;
+    font-weight: 300;
+    color:#232c3b;
+    border-bottom: unset!important;
+}
+.container.about{
+    padding-bottom: unset!important;
+}
+.follow-us{
+    height:80px ;
+}
+#about.message.left,#careers.message.left{
+    padding-bottom: unset!important;
+    border-bottom: unset!important;
+}
