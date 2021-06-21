@@ -1,12 +1,12 @@
 <%inherit file="main.html" />
 <%!
-from django.utils.translation import ugettext as _
-from openedx.core.djangolib.markup import HTML
+  from django.utils.translation import ugettext as _
+  from openedx.core.djangolib.markup import HTML
 %>
 
 <section class="home">
   <header>
-    <div class="outer-wrapper">
+    <!-- <div class="outer-wrapper">
       <div class="title">
         <div class="heading-group">
           % if homepage_overlay_html:
@@ -38,10 +38,40 @@ from openedx.core.djangolib.markup import HTML
           </div>
         </a>
       % endif
+    </div> -->
+    <div class="text-box">
+      <h1>ICT Hub</h1>
+      <p>Knowledge shared is knowledge squared.</p>
+      <a style="color: white; text-decoration: none;" href="https://www.facebook.com/groups/990352754392150" target="_blank" class="hero-btn">Visit us to know more</a>
     </div>
-
   </header>
-  <%include file="${courses_list}" />
+  <div class="hust-ict">
+    <div style="display: flex">
+      <div style="margin: 0 auto">
+        <a href="https://www.facebook.com/groups/promo.ict.hust" target="_blank"><img class="home-image-logo" src="/static/my-theme/images/ict.png" alt=""></a>
+        <a href="https://soict.hust.edu.vn/" target="_blank"><img src="/static/my-theme/images/soict-logo.jpeg" class="home-image-logo" alt=""></a>
+    </div>
+    </div>
+    <!-- <p>Knowlegde shared is Knowlegde squared!</p> -->
+    <h1>${_(HTML("Vip pro luxury courses from <strong>{university_name}</strong>")).format(university_name="Global ICT & SOICT")}</h1>
+    <p><i>${_("For anyone, anywhere, anytime")}</i></p>
+  </div>
+  <div class="explore-courses">
+    <h1>Explore top courses</h1>
+    <div class="course-tags">
+      <a class="course-tag" href="#">Computer Science</a>
+      <a class="course-tag" href="#">Data Science</a>
+      <a href="#" class="course-tag">Business</a>
+      <a href="#" class="course-tag">Healthcare</a>
+      <a href="#" class="course-tag">Design</a>
+    </div>
+    <%include file="${courses_list}" />
+  </div>
+  <div class="description">
+    <div style="color: white; max-width: 1000px; font-weight: 700; font-size: 40px; line-height: 45px;">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam cupiditate minus maiores ipsum nesciunt unde, hic excepturi consequuntur cumque, ut voluptatem ducimus. Aspernatur ratione quos aperiam, voluptatibus enim fugit neque!</p>
+    </div>
+  </div>
 
 </section>
 
