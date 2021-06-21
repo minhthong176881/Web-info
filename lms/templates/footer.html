@@ -171,12 +171,22 @@
   % endfor
 % endif
 
-<!-- <script>
+<script>
+  function getImagesByAlt(alt) {
+    var images = document.getElementsByTagName("img");
+    for (var i = 0, len = images.length; i < len; ++i) {
+        if (images[i].alt == alt) {
+            return images[i];
+        }
+    }
+    return null;
+}
   window.onload = function () {  
-    var search = document.createElement('input');
-    search.setAttribute('class', 'search-courses');
-    search.setAttribute('type', 'search');
-    search.setAttribute('placeholder', 'Search for what you\'re interested in...');
-    document.querySelectorAll('.hidden-mobile')[0].appendChild(search);
+    var url = window.location.href;
+    var image;
+    if (url.includes('courses/course-')) {
+      image = getImagesByAlt('organization logo');
+      image.style.width = '65px';
+    }
   }
-</script> -->
+</script>
