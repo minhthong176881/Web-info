@@ -1,0 +1,147 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Blog")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <!-- <section class="container about"> -->
+        <!-- <h1>
+            <%block name="pageheader">${page_header or _("Blog")}</%block>
+        </h1>
+        <p>
+            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+        </p> -->
+        <!-- <div class="blog-left" style="">
+
+        </div>
+        <div class="blog-right">
+
+        </div>
+    </section> -->
+    <header class="blog-header" style='background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.4)), url("/static/my-theme/images/taquangbuu.jpg");
+    height: 50vh; line-height: 50vh;'>
+        <div class="text-box" style="margin-top: -20vh">
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <div class="blog-content">
+        <div class="blog-left">
+            <div class="featured-blog">
+                <a href="https://www.facebook.com/groups/promo.ict.hust" target="_blank"><img style="width: 100%" src="/static/my-theme/images/ict-global.jpg" alt=""></a>
+                <br><br><br><a href="#" >DATA SCIENCE</a> <br><br>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                <p style="font-size: 18px; line-height: 28px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde earum illo ratione et magnam debitis vitae voluptas mollitia laboriosam, ut nemo officiis fugit minima odio quia blanditiis tenetur esse quas?...</p><br><br>
+                <a href="#" style="font-size: 18px;">Read the article -></a>
+            </div>
+            <div class="posts" style="margin-top: 200px">
+                <h2>Careers & Skills</h2><br>
+                <div class="post">
+                    <div class="left-post">
+                        <a href="#"><img src="/static/my-theme/images/ict-global.jpg" alt=""></a>
+                        <div style="padding: 0 15px">
+                            <br><br><a href="#" >DATA SCIENCE</a> <br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde earum illo ratione et magnam debitis vitae voluptas mollitia laboriosam, ut nemo officiis fugit minima odio quia blanditiis tenetur esse quas?...</p><br>
+                        </div>
+                    </div>
+                    <div class="right-post">
+                        <a href="#"><img src="/static/my-theme/images/background-b1.jpg" alt=""></a>
+                        <div style="padding: 0 15px;">
+                            <br><br><a href="#" >CAREERS</a> <br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde earum illo ratione et magnam debitis vitae voluptas mollitia laboriosam, ut nemo officiis fugit minima odio quia blanditiis tenetur esse quas?...</p><br>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" style="font-size: 18px;">Read more Careers & Skills -></a>
+            </div>
+            <div class="posts" style="margin-top: 100px">
+                <h2>Stories</h2><br>
+                <div class="post">
+                    <div class="left-post">
+                        <a href="#"><img src="/static/my-theme/images/ict-global.jpg" alt=""></a>
+                        <div style="padding: 0 15px">
+                            <br><br><a href="#" >DATA SCIENCE</a> <br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde earum illo ratione et magnam debitis vitae voluptas mollitia laboriosam, ut nemo officiis fugit minima odio quia blanditiis tenetur esse quas?...</p><br>
+                        </div>
+                    </div>
+                    <div class="right-post">
+                        <a href="#"><img src="/static/my-theme/images/background-b1.jpg" alt="" style="height: 200px; width: 100%; overflow: hidden;"></a>
+                        <div style="padding: 0 15px;">
+                            <br><br><a href="#" >CAREERS</a> <br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde earum illo ratione et magnam debitis vitae voluptas mollitia laboriosam, ut nemo officiis fugit minima odio quia blanditiis tenetur esse quas?...</p><br>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" style="font-size: 18px;">Read more Stories -></a>
+            </div>
+            <div class="posts" style="margin-top: 100px">
+                <h2 >Learning online</h2><br>
+                <div  class="post">
+                    <div class="left-post">
+                        <a href="#"><img src="/static/my-theme/images/ict-global.jpg" alt=""></a>
+                        <div style="padding: 0 15px">
+                            <br><br><a href="#" >DATA SCIENCE</a> <br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde earum illo ratione et magnam debitis vitae voluptas mollitia laboriosam, ut nemo officiis fugit minima odio quia blanditiis tenetur esse quas?...</p><br>
+                        </div>
+                    </div>
+                    <div class="right-post"  >
+                        <a href="#"><img src="/static/my-theme/images/background-b1.jpg" alt=""></a>
+                        <div style="padding: 0 15px;">
+                            <br><br><a href="#" >CAREERS</a> <br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde earum illo ratione et magnam debitis vitae voluptas mollitia laboriosam, ut nemo officiis fugit minima odio quia blanditiis tenetur esse quas?...</p><br>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" style="font-size: 18px;">Read more online learning articles -></a>
+            </div>
+
+            <!-- <button style="padding: 10px 50px; margin: 100px auto; color: white; background-color: red !important;">View All Posts</button> -->
+            <a href="#" class="hero-btn" style="color: white; border-color: #22b8f9; background-color: #22b8f9; padding: 10px 50px; margin: 100px auto; display: inline-block;">View All Posts</a>
+        </div>
+        <div class="blog-right">
+            <h4 style="font-weight: 600;">Popular Resources</h4>
+            <div class="popular-resources" style="margin-top: 20px">
+                <div class="popular-resource">
+                    <div>
+                        <img src="/static/my-theme/images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p style="line-height: 23px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero nisi.</p>
+                    </div>
+                </div>
+                <div class="popular-resource">
+                    <div>
+                        <img src="/static/my-theme/images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p style="line-height: 23px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero nisi.</p>
+                    </div>
+                </div>
+                <div class="popular-resource">
+                    <div>
+                        <img src="/static/my-theme/images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p style="line-height: 23px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero nisi.</p>
+                    </div>
+                </div>
+                <div class="popular-resource">
+                    <div>
+                        <img src="/static/my-theme/images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p style="line-height: 23px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero nisi.</p>
+                    </div>
+                </div>
+                <div class="popular-resource">
+                    <div>
+                        <img src="/static/my-theme/images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p style="line-height: 23px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero nisi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
