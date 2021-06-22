@@ -92,7 +92,7 @@
       % endif
     >
       <div class="colophon">
-        <nav class="nav-colophon d-flex flex-column align-items-start" aria-label="${_('About')}">
+        <nav class="nav-colophon menu-footer-div" aria-label="${_('About')}">
           <ol class="d-flex flex-row">
               % for item_num, link in enumerate(footer['navigation_links'], start=1):
               <li class="nav-colophon-0${item_num}  font-weight-bold ">
@@ -100,7 +100,7 @@
               </li>
               % endfor
           </ol>
-          <div class="wrapper-logo mt-3 mb-auto">
+          <div class="wrapper-logo mb-auto logo-footer">
             <p>
               <a href="/">
                 ## The default logo is a placeholder.
@@ -122,7 +122,7 @@
          <div class="d-flex align-items-center mt-3"> <input placeholder="Email address" class="input-news-letter"/><button type="button" class="btn-subscribe text-footer ">Subscribe</button></div>
 
         </div>
-<div class=" w-12 d-flex flex-column text-footer">
+<div class="  follow-us-footer text-footer">
   <h3 class="text-footer font-weight-bold tittle-footer ">Follow us</h3>
   <div class="d-flex mt-3 justify-content-around">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook subtitle-footer " viewBox="0 0 16 16">

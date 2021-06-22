@@ -126,6 +126,7 @@ $color-footer:#dffbff;
     display: flex !important;
     justify-content: space-between;
 align-items: baseline;
+flex-flow: wrap;
     width: -webkit-fill-available!important;
     padding:0 20px 20 20px;
   
@@ -398,4 +399,93 @@ a.register-btn.btn{
 #about.message.left,#careers.message.left{
     padding-bottom: unset!important;
     border-bottom: unset!important;
+}
+#about-menu a.active{
+    border-bottom: 3px solid transparent;
+}
+.logo-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:200px;
+}
+.about-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%
+}
+.row-2{
+    margin-top: 3rem;
+}
+.international-div{
+    width: 50%;
+}
+.about-info-div{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top:3rem;
+    width: 100%;
+}
+.menu-footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.follow-us-footer{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:750px){
+    .colophon{
+        flex-direction: column!important;
+        align-items: center!important;
+    }
+    wrapper-logo{
+        margin-left: 20px;
+        margin-top:unset!important;
+    }
+    .menu-footer-div{
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+    .follow-us-footer{
+        display: flex;
+        flex-direction: row!important;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+@media  screen and (max-width:600px) {
+    .logo-title{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+        height: unset!important;
+    }
+    .row-2{
+        margin-top: unset;
+    }
+    .about .photo{
+        width:90%!important
+    }
+    .about-info{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .about-info div.w-25{
+        width: 50%!important;
+    }
+    
+    .international-div{
+        width: 80%;
+    }
 }
